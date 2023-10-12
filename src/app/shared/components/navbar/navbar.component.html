@@ -1,0 +1,30 @@
+<mat-toolbar color="warn">
+  <button mat-icon-button routerLink="/inicio" class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>home</mat-icon>
+  </button>
+  <span>Metal App</span>
+
+  <span class="example-spacer"></span>
+
+  <!-- ENRUTAMOS PÁGINAS -->
+  <button mat-button routerLink="/nosotros">Nosotros</button>
+  <button mat-button routerLink="/productos">Carrito</button>
+ 
+  <!--MENÚ DESPEGABLE PARA PRODUCTOS-->
+  
+  <button mat-button [matMenuTriggerFor]= "menu">Géneros</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/deathmetal">Death Metal</button>
+    <button mat-menu-item routerLink="/heavymetal">Heavy Metal</button>
+    <button mat-menu-item routerLink="/thrashmetal">Thrash Metal</button>
+  </mat-menu>
+  <button mat-button routerLink="/admin">Administrador</button>
+
+  <span class="example-spacer"></span>
+
+    <button mat-button [matMenuTriggerFor]= "user"><mat-icon>person</mat-icon></button>
+  <mat-menu #user="matMenu">
+    <button mat-menu-item routerLink="/login">Iniciar sesión <mat-icon>person</mat-icon></button>
+    <button mat-menu-item routerLink="/register">Registrarse <mat-icon>person_add</mat-icon></button>
+  </mat-menu>
+</mat-toolbar>
