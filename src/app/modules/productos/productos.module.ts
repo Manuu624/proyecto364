@@ -7,6 +7,7 @@ import { CardComponent } from './components/card/card.component';
 import { HeavymetalComponent } from './pages/heavymetal/heavymetal.component';
 import { DeathmetalComponent } from './pages/deathmetal/deathmetal.component';
 import { ThrashmetalComponent } from './pages/thrashmetal/thrashmetal.component';
+import { CardCollaresComponent } from './components/card-collares/card-collares.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { ThrashmetalComponent } from './pages/thrashmetal/thrashmetal.component'
     DeathmetalComponent,
     ThrashmetalComponent,
     CardComponent,
+    CardCollaresComponent,
 
   ],
   imports: [
